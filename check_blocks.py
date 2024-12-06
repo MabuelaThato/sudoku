@@ -1,8 +1,9 @@
-def check_blocks(rows):
+def check_blocks(blocks):
     counter = 0
-    for row in rows:
-        if '0' in row:
-            counter += 1
+    for x,y in blocks.items():
+        for row in y:
+            if "0" in row:
+                counter += 1
 
     if counter > 0:
         return False

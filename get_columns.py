@@ -1,4 +1,4 @@
-def get_columns(blocks):
+def get_columns(blocks, block):
     columns = []
     block_rows = list(blocks.values())
     
@@ -17,4 +17,10 @@ def get_columns(blocks):
         columns.append(second)
         columns.append(third)
 
-    return columns
+    match block:
+        case 1 | 4 | 7:
+            return columns[0:3]
+        case 2 | 5 | 8:
+            return columns[3:6]
+        case 3 | 6 | 9:
+            return columns[6:9]

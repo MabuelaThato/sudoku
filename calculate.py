@@ -53,6 +53,7 @@ def calculate(blocks,rows, columns):
     
     # # CHECK BLOCKS
     # for x,y in blocks.items():
+    #     current_needed = {}
     #     zeros_indexes = []
     #     left = [1,4,7]
     #     middle = [2,5,8]
@@ -60,6 +61,6 @@ def calculate(blocks,rows, columns):
     #         for i in range(3):
     #             for z in range(3):
     #                 if y[i][z] == "0":
-    #                     zeros_indexes.append()
+    #                     current_needed[[i,z]] = 
 
-    return [rows, columns]
+    return [needed_rows, needed_cols]
